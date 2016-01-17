@@ -1,6 +1,8 @@
 # drag.js
 一个简单的js拖拽插件
+
 1、支持有效的拖拽元素
+
 2、支持拖拽区域限制
 
 ### 基本使用
@@ -23,7 +25,7 @@
 	drag(document.getElementById("obj1"), { validSelector: ".header" });
 </script>
 ```
-查看<a href="javascript::">Demo</a>
+查看<a href="http://luopq.com/demo/drag/index.html" target="_blank">Demo</a>
 
 #### options
 | 参数名 | 作用 |
