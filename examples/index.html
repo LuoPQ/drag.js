@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>可拖拽的有效范围</title>
+    <style>
+        html, body, div { margin: 0; padding: 0; }
+        .box { width: 100px; height: 100px; border: 1px solid #ccc; background-color: deepskyblue; text-align: center; line-height: 100px; }
+        .dialog { width: 200px; height: 200px; border: 5px solid #ccc; background: #6b4747; }
+        .header { height: 40px; background-color: #ffd800; }
+    </style>
+</head>
+<body>
+    <div id="obj1" class="dialog" style="position:absolute;left:50px">
+        <div class="header">
+            拖拽的有效元素
+        </div>
+        <div class="content">
+            拖拽对象1
+        </div>
+    </div>
+    <div id="obj2" class="dialog" style="position:absolute;left:50px;top:250px;">
+        拖拽对象2
+    </div>
+
+    <div class="parent" style="border:2px solid red;width:500px;height:200px;left:50px;top:500px;position:absolute">
+        <div id="obj3" style="width:50px;height:50px;border:2px solid #ccc;background:green;">
+            drag
+        </div>
+    </div>
+
+    <script src="../src/draggable.js"></script>
+    <script>
+
+
+        drag(document.getElementById("obj1"), { validSelector: ".header" });
+        drag(document.getElementById("obj2"));
+        drag(document.getElementById("obj3"), { parentSelecotr: ".parent" });
+
+    </script>
+</body>
+</html>
