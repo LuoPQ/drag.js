@@ -1,4 +1,10 @@
-﻿; (function (window, document, undefined) {
+﻿/**
+ * draggable.js v0.1.0
+ * MIT License
+ * author info pls visit: http://luopq.com
+ * for more info pls visit: https://github.com/LuoPQ/drag.js
+ */
+; (function (window, document, undefined) {
     //#region dom方法
     var dom = {
         on: function (node, eventName, handler) {
