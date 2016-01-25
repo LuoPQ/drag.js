@@ -135,7 +135,7 @@
         this.target = node;
         this.opt = opt || {};
         this.validElement = node.querySelector(this.opt.validSelector) || node;
-        this.parentElement = dom.parent(this.target, this.opt.parentSelecotr) || body;
+        this.parentElement = dom.parent(this.target, this.opt.parentSelector) || body;
 
         this.mouseX = 0;
         this.mouseY = 0;
@@ -171,7 +171,7 @@
 
             this.parentWidth = this.parentElement.scrollWidth || this.parentElement.clientWidth;
             this.parentHeight = this.parentElement.scrollHeight || this.parentElement.clientHeight;
-            if (!this.opt.parentSelecotr) {
+            if (!this.opt.parentSelector) {
                 this.parentHeight = Math.max(this.parentHeight, window.innerHeight);
             }
 

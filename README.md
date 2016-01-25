@@ -28,7 +28,7 @@
 查看<a href="http://luopq.com/demo/drag/index.html" target="_blank">Demo</a>
 
 #### options
-| 参数名 | 作用 |
-| ----  | ---- |
-|validSelector| 有效的拖拽元素的选择器，默认整个元素|
-|parentSelecotr| 父级区域选择器，默认body元素|
+| 参数名 | 类型 |默认值|描述|
+| ----  | ---- |-----|---|
+|validSelector|string|null|有效的拖拽元素的选择器，默认整个元素|
+|parentSelector|string|null|父级区域选择器，默认body元素|
