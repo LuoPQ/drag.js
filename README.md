@@ -27,7 +27,7 @@
 ```
 查看<a href="http://luopq.com/demo/drag/index.html" target="_blank">Demo</a>
 
-#### options
+### Options
 | 参数名 | 类型 |默认值|描述|
 | ----  | ---- |-----|---|
 |validSelector|string|null|有效的拖拽元素的选择器，默认整个元素|
